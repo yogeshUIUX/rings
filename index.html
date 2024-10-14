@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ring and I</title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/styles.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="container-fluid dark-theme-body">
+        <section class="row jw-banner justify-content-center " id="jwbanner">
+            <div class="col-md-8 col-lg-6  ps-md-4  ps-4  order-md-0 order-1   jw-banner-left  ">
+                <div class="row gx-5 pt-4 ps-md-5 justify-content-center h-100">
+                    <div class="col-md-12 ps-md-5 align-self-center">
+                        <h1 class="  mb-0 cinzel fw-normal jw-title text-primary">Your love is unique, <br>
+                            so should be your <span class="ring-word">rin</span></h1>
+                        <p class="mb-5 jw-subtitle text-white cinzel font-1_1rem my-1">India's First Ever Designer
+                            Diamond Ring Studio
+                        </p>
+                        <p class="font-1_5rem fst-italic fw-200 mb-0 mt-3 text-white">Explore the personalized
+                            collection for you</p>
+                        <p class="font-1_5rem fst-italic fw-light text-white">
+                            <span class="text-primary"> 1200+</span> Designs | <span class="text-primary">16</span>
+                            Styles
+                        </p>
+                        <div class="header-button my-5">
+                            <button type="button"
+                                class="btn-lg border-1 border-primary btn px-4 rounded-pill text-white">
+                                Book an Appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="col-md-4 col-lg-6 order-md-1 order-0 jw-banner-right  ">
+                <img src="assets/images/ring/header_rings.png" data-aos="zoom-in" class="img-fluid" alt="Diamond ring">
+            </div>
+        </section>
+        <!-- <div id="successToast" class="toast position-fixed text-bg-primary top-0 end-0 p-3" style="z-index: 11" role="alert" aria-live="assertive" aria-atomic="true">
+           
+            <div class="toast-body">
+                Thank You, Our team will reachout you soon!
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div> -->
+        <div id="successToast" class="toast align-items-center text-bg-success    position-fixed  top-0 end-0 border-0"
+            role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Thank You, Our team will reachout you soon!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+        <section class="row    justify-content-center" id="appointmentForm" data-aos="fade-up">
+            <div class="col-md-12 jw-form px-3 px-md-5">
+                <form id="myForm"
+                    class="align-items-center bg-opacity-10 bg-secondary   gx-3   rounded-pill row row-cols-lg-auto  needs-validation"
+                    novalidate>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="input-group">
+                            <div class="input-group-text">Name :</div>
+                            <input type="text" class="form-control" id="name" required>
+                            <!-- <div class="invalid-tooltip">
+                                Name is required.
+                              </div>                         -->
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="input-group">
+                            <div class="input-group-text">Contact Number :</div>
+                            <input type="tel" class="form-control" id="contact" pattern="[0-9]{10}" required>
+                            <!-- <div class="invalid-tooltip">
+                                Please  enter valid contact.
+                              </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="input-group">
+                            <div class="input-group-text">E-Mail ID :</div>
+                            <input type="email" class="form-control" id="email" required>
+                            <!-- <div class="invalid-tooltip">
+                                Email is required.
+                              </div>  -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="input-group">
+                            <div class="input-group-text">City :</div>
+                            <input type="text" class="form-control" id="city" required>
+                            <!-- <div class="invalid-tooltip">
+                                City is required.
+                              </div>  -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="input-group">
+                            <div class="input-group-text">Area :</div>
+                            <input type="text" class="form-control" id="area" required>
+                            <!-- <div class="invalid-tooltip">
+                                Area is required.
+                              </div>  -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-auto col-12 py-lg-0 py-4 text-center">
+                        <button type="submit"
+                            class="bg-opacity-50 bg-secondary btn font-1_8rem rounded-circle text-white"><i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="row justify-content-center video-block" id="jwVideo">
+            <div class="col-md-12 py-5 mb-5">
+                <div class="row video_header " data-aos="fade-up">
+                    <div class="col-12 text-center text-white position-relative">
+                        <img src="assets/images/ring/dimonring.png" class="fd fd-7" alt="diamond">
+                        <p class="font-2_5rem fw-200 mb-0 mt-5">Discover how we are </p>
+                        <h3 class="cinzel display-3 fw-normal mb-0 text-uppercase"><span
+                                class="quote">&#10075;</span>not just another ring jeweler!<span
+                                class="quote">&#10076;</span></h3>
+                        <div class="w-100"></div>
+                        <button type="button" data-aos="zoom-in"
+                            class="btn btn-light btn-sm font-1_1rem fw-bold mt-4 px-3 rounded-pill">Watch Video <i
+                                class="bi bi-play-fill"></i></button>
+                    </div>
+                </div>
+                <div class="row personalize_header mt-5">
+                    <div class="col-12 text-center text-white">
+                        <p class="font-2_5rem fw-200 mb-0  ">You Won<sup class="single-quote">&#10076;</sup>t Stop
+                            Admi<em class="fw-semibold">ring</em></p>
+                        <h3 class="cinzel display-2 fw-normal mb-0 text-uppercase textture-heading">PERSONALIZATION</h3>
+
+                    </div>
+                </div>
+                <div class="row personalize_featutes justify-content-center text-primary mt-5">
+                    <div class="  col-lg-4 text-center  order-1 order-lg-0">
+                        <div class="row ">
+                            <div class="col-md-6  col-lg-8 text-center feature-item text-center mb-md-5 mb-4"
+                                data-aos="fade-up">
+                                <img src="assets/images/ring/personalization1.svg" alt="dimond">
+                                <p>Thoughtful range of 16 styles<br>and 1200 designs</p>
+                            </div>
+                            <div class="col-md-6  col-lg-8 text-center feature-item text-center ms-lg-auto my-lg-5 "
+                                data-aos="fade-up">
+                                <img src="assets/images/ring/personalization2.svg" alt="dimond">
+                                <p>Personalization for ideal size,<br>metal work, colour and texture</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 order-0 order-lg-1">
+                        <div class="ring-container">
+                            <img src="assets/images/ring/dualring.png" data-aos="fade-up" class="img-fluid"
+                                alt="ring" />
+                        </div>
+                    </div>
+
+                    <div class=" col-lg-4 order-lg-2">
+                        <div class="row  ">
+                            <div class="col-md-6  col-lg-8 text-center feature-item text-center ms-lg-auto"
+                                data-aos="fade-up">
+                                <img src="assets/images/ring/personalization5.svg" alt="dimond">
+                                <p>Magical experience made memorable<br>with complementary photoshoot</p>
+                            </div>
+                            <div class="col-md-6   col-lg-8 text-center feature-item text-center my-lg-5 "
+                                data-aos="fade-up">
+                                <img src="assets/images/ring/personalization4.svg" alt="dimond">
+                                <p>Guidance at every step, from the<br>diamond cut, clarity, colour to carat<br>weight
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center feature-item order-lg-3" data-aos="fade-up">
+                        <img src="assets/images/ring/personalization3.svg" alt="dimond">
+                        <p>GIA certified rings crafted<br>with ultra-modern technology</p>
+
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center feature-item order-lg-4" data-aos="fade-up">
+
+                        <img src="assets/images/ring/personalization6.svg" alt="dimond">
+                        <p>Inhouse manufacturing that ensures<br>a diamond ring never burns a hole in<br> your pocket
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row    jw-steps justify-content-center bg-white" id="jwsteps">
+            <div class="col-lg-5 position-relative">
+                <div class="overlay-white"></div>
+                <!-- <img src="assets/images/ring/biggoldring.png" class="img-fluid" alt="Diamond ring"> -->
+            </div>
+            <div class="col-lg-5 col-sm-9 align-self-start jw-steps-content ">
+                <div class="row gx-5 pt-4 justify-content-center h-100">
+                    <div class="col-md-12  align-self-center">
+                        <div class="display-3  mb-3 pb-3  mb-lg-5 pb-lg-5 cinzel  jw-heading"><span
+                                class="text-primary">A
+                                Five-Step</span><br>Journey To Your<br>Dream Ring</div>
+                        <div class="w-100"></div>
+                        <span class="step-count">04</span>
+                        <p class=" jw-subtitle  fw-semibold font-2_5rem  ">Perfect fit, for hands, for pockets</p>
+
+                        <p class="font-1_2rem fw-medium   mb-0 mt-3  ">We believe that everyone deserves their dream
+                            ring, regardless of their budget. That's why we work with you to find a solution that fits
+                            your needs without sacrificing quality. And if your dream diamond seems out of reach, we'll
+                            discuss and tweak the 4Cs (cut, clarity, color, carat weight) to make it happen.</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2  col-sm-3  text-center py-5 h-25 align-self-end align-items-center">
+                <a href="javascript:void(0)" class="bg-opacity-50 font-3rem bg-light btn font-1_8rem rounded-circle"><i
+                        class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </section>
+
+        <section class="product-slider row position-relative justify-content-center jw-banner" id="products">
+            <img src="assets/images/ring/pindimond1.png" class="fd fd-5" alt="diamond" data-aos="fade-in">
+            <img src="assets/images/ring/dimond.png" class="fd fd-6" alt="diamond" data-aos="fade-in">
+            <div class="col-md-12 pt-5 px-3">
+                <h2 class="font-4rem product-slider-header cinzel text-white co fw-200 mb-0 pb-4 mt-5 text-center">16
+                    Flaunt-Worthy<br>
+                    Styles For Every Personality</h2>
+                <!-- Slider main container -->
+                <div class="swiper mySwiper product-swipper mt-5">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">01</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product1.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem ">Solitaire Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect ">
+                                <span class="font-1_8rem">02</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product2.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem ">Floral Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">03</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product3.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem">Cluster Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">04</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product4.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem ">Abstract Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">05</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product5.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem ">Cocktail Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">06</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product6.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem">Inspired Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">07</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product1.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem ">Solitaire Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">08</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product2.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem ">Floral Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">09</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product3.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem">Cluster Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">10</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product4.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem ">Abstract Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">11</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product5.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem ">Cocktail Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider_card  ">
+                            <div class="text-center card hover-effect">
+                                <span class="font-1_8rem">12</span>
+                                <div class="img_container">
+                                    <img src="assets/images/ring/product6.png" alt="product" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <p class="font-1_4rem">Inspired Ring Style</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="row justify-content-center py-5 font-2_5rem gx-5 bottom-navigation">
+                        <div class="col-auto">
+                            <div class="  custom-prev"><i class="bi bi-arrow-left text-primary"></i></div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="  custom-next"><i class="bi bi-arrow-right  text-primary"></i></div>
+                        </div>
+                        <div class="w-100 py-md-5"></div>
+                    </div>
+                </div>
+
+
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+        </section>
+        <section class="row jw-occasion  " id="occasion">
+            <div class="col-md-8">
+                <div class="img-block block1">
+                    <img src="assets/images/ring/occasion1.jpg" alt="occasion" />
+                    <a href="javascript:void(0)" class="btn border border-primary rounded-circle  "><i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 align-self-end px-md5">
+                <div class="img-block block2">
+                    <img src="assets/images/ring/occasion2.jpg" alt="occasion" />
+                    <a href="javascript:void(0)" class="btn border border-primary rounded-circle  "><i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <p class="cinzel col-md-8 display-2 fw-normal mb-0 text-end text-white">Choose the <span
+                    class="text-primary">occasion</span></p>
+            <p class="cinzel col-md-9 display-2 fw-normal mb-0 text-end text-white">you wish to make special </p>
+            <p class="cinzel col-md-11 display-2 fw-normal pe-md-5 text-end text-primary">&#126; with a diamond ring</p>
+            <div class="col-md-7">
+                <div class="img-block block3">
+                    <img src="assets/images/ring/occasion3.jpg" alt="occasion" />
+                    <a href="javascript:void(0)" class="btn border border-primary rounded-circle"><i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="img-block block4">
+                    <img src="assets/images/ring/occasion4.jpg" alt="occasion" />
+                    <a href="javascript:void(0)" class="btn border border-primary rounded-circle   "><i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+        </section>
+
+        <section class="row    jw-content justify-content-center bg-white" id="jwContent">
+
+            <div class="col-lg-7 order-1  order-lg-0 align-self-center  jw-steps-content ">
+                <div class="row pt-4 justify-content-center h-100">
+                    <div class="col-md-12  ps-md-5 pb-4">
+                        <div class="display-3 cinzel  jw-heading">
+                            <div class="typing-text">It’s Not Perfect<br>Until You Say It Is</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative d-none d-lg-flex">
+
+                        <img src="assets/images/ring/threedidmond.png" class="img-fluid three-dimond" alt="diamond">
+
+                    </div>
+                    <div class="col-md-8  align-self-start">
+
+                        <p class="font-1_2rem fw-medium   mb-0 mt-3  ">You can thoroughly inspect your diamond ring at
+                            our studio with our real-time Diamond Inspection service. This includes a one-on-one
+                            consultation with our ring expert, who will guide you through a high-definition magnifying
+                            glass to examine everything from the specifications to the diamond's gradients and
+                            certifications.</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-5 order-0 order-lg-1 p-0 position-relative">
+                <img src="assets/images/ring/holdedring.png" class="img-fluid" alt="Diamond ring">
+            </div>
+
+
+        </section>
+        <section class="row    jw-content-2 justify-content-center bg-white" id="jwContent2">
+
+            <div class="col-md-10 align-self-center pt-5 jw-steps-content ">
+                <div class="display-1 cinzel text-white jw-heading text-center pt-5">And here’s how we sprinkle<br>some
+                    extra sparkles</div>
+                <div class="row pt-4 justify-content-md-around h-100">
+                    <div class="col-lg-3">
+                        <div class="text-center card bg-transparent border-o rounded-0">
+                            <div class="img_container  px-4">
+                                <img src="assets/images/ring/sparkle1.png" alt="product" class="img-fluid">
+                            </div>
+                            <div class="card-body px-0">
+                                <p class="font-1_8rem fw-bold text-primary">Polishing & engraving</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="text-center card bg-transparent border-o rounded-0">
+                            <div class="img_container  px-4">
+                                <img src="assets/images/ring/sparkle2.png" alt="product" class="img-fluid">
+                            </div>
+                            <div class="card-body  px-0">
+                                <p class="font-1_8rem fw-bold  text-primary">Cost-free cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="text-center card bg-transparent border-o rounded-0">
+                            <div class="img_container px-4">
+                                <img src="assets/images/ring/sparkle3.png" alt="product" class="img-fluid">
+                            </div>
+                            <div class="card-body  px-0">
+                                <p class="font-1_8rem fw-bold  text-primary">Complimentary<br>photoshoot & celebration
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <section class="row    jw-content-3 justify-content-center bg-white" id="jwContent3">
+
+            <div class="col-md-11 align-self-center py-5 jw-steps-content ">
+                <div class="display-1 cinzel  jw-heading text-center pt-5">They said <span
+                        class="text-primary">YES!</span></div>
+                <img src="assets/images/ring/pinindimond.png" class="fd fd-1" alt="diamond">
+                <img src="assets/images/ring/sdring.png" class="fd fd-2" alt="diamond">
+                <img src="assets/images/ring/sdring2.png" class="fd fd-3" alt="diamond">
+                <img src="assets/images/ring/threedimonds.png" class="fd fd-4" alt="diamond">
+
+
+                <div class="row pt-4 justify-content-md-around h-100 text-center">
+                    <div class="col-lg-3  col-md-5">
+                        <div class=" card">
+                            <div class="img_container">
+                                <img src="assets/images/ring/avatar1.png" alt="product" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="font-1_2rem card-title">Ritvi Roy</p>
+                                <p class="font-1_4rem  card-text">Korem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                                <p class="font-1_4rem card-text">Korem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-5">
+                        <div class=" card">
+                            <div class="img_container">
+                                <img src="assets/images/ring/avatar2.png" alt="product" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="font-1_2rem card-title">Rahul Kumar </p>
+                                <p class="font-1_4rem  card-text">Korem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                                <p class="font-1_4rem card-text">Korem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-5">
+                        <div class=" card">
+                            <div class="img_container">
+                                <img src="assets/images/ring/avatar3.png" alt="product" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="font-1_2rem card-title">Pooja Bhatt</p>
+                                <p class="font-1_4rem  card-text">Korem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                                <p class="font-1_4rem card-text">Korem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row    jw-content-4 justify-content-center " id="jwContent4">
+
+            <div class="col-md-7  jw-steps-content ">
+                <div class="row pt-4   h-100">
+                    <div class="col-md-3 col-5 position-relative">
+
+                        <img src="assets/images/ring/twodimonds.png" class="img-fluid two-dimond" alt="diamond">
+
+                    </div>
+                    <div class="col-md-11 offset-md-1  ps-md-5 pt-4">
+                        <div class="display-3 cinzel text-uppercase text-white jw-heading" data-aos="fade-right">Say
+                            <span class="text-primary">‘I do’
+                            </span>to a<br> personalized<br>diamond ring</div>
+                        <div class="header-button my-5 ">
+                            <button type="button" data-aos="fade-right"
+                                class="btn-lg fw-bolder bg-primary btn px-4 rounded-pill text-dark">
+                                Book an appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 p-0 position-relative ">
+                <img src="assets/images/ring/footer_banner.png" class="img-fluid" alt="Diamond ring">
+            </div>
+
+        </section>
+
+        <footer class="row    jw-footer  justify-content-center bg-white" id="jwContent4">
+            <div class="col-md-12">
+                <p class="my-4 text-center font-0_9rem">Copyright © 2024 | All rights reserved. Rings and I</p>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/jquery.slim.min.js"></script>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // AOS.init();
+        AOS.init({
+            duration: 650,
+            once: true
+        });
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 6,
+            slidesOffsetAfter: 50,
+            slidesOffsetBBefore: 50,
+            spaceBetween: 60,
+            navigation: {
+                enabled: true,
+                nextEl: '.custom-next',
+                prevEl: '.custom-prev',
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                1199: {
+                    slidesPerView: 5,
+                    spaceBetween: 40
+                }
+            },
+        });
+        const form = document.getElementById('myForm');
+        const successToast = new bootstrap.Toast(document.getElementById('successToast'));
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (form.checkValidity()) {
+                const formData = {
+                    name: document.getElementById('name').value,
+                    contact: document.getElementById('contact').value,
+                    email: document.getElementById('email').value,
+                    city: document.getElementById('city').value,
+                    area: document.getElementById('area').value
+                };
+                console.log('Form Submitted:', formData);
+                successToast.show();
+                form.reset();
+            } else {
+                console.log('Form is invalid');
+                form.classList.add('was-validated');
+            }
+        });
+        // contact no validation
+        const contactInput = document.getElementById('contact');
+        contactInput.addEventListener('input', function (event) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+    </script>
+
+</body>
+
+</html>
